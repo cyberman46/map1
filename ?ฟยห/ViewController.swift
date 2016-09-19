@@ -32,6 +32,7 @@ class ViewController: UIViewController,MKMapViewDelegate {
         let addLat = Double(txtLat.text!)
         let addLon = Double(txtLon.text!)
         view.endEditing(true)
+        
         let latitude : CLLocationDegrees = addLat!
         let longtitude : CLLocationDegrees = addLon!
         let latDelta : CLLocationDegrees = 0.08
