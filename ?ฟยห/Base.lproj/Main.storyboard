@@ -1,26 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Maps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iei-mL-1Jz"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add.. Latitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-xj-2zD">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add.. Longtitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-IN-COe">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAL-iD-XgQ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3yw-cW-Gue"/>
+                                    <constraint firstAttribute="width" constant="105" id="ru9-9c-syd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="find..."/>
+                                <connections>
+                                    <action selector="plotLocationInMapp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kd-9p-Adf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yAL-iD-XgQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="0cD-Gf-YDc"/>
+                            <constraint firstItem="Lfw-xj-2zD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="24U-qs-qRw"/>
+                            <constraint firstItem="Cgw-IN-COe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8mK-FD-09b"/>
+                            <constraint firstItem="iei-mL-1Jz" firstAttribute="top" secondItem="yAL-iD-XgQ" secondAttribute="bottom" constant="24" id="CZ3-et-aLz"/>
+                            <constraint firstItem="Cgw-IN-COe" firstAttribute="top" secondItem="Lfw-xj-2zD" secondAttribute="bottom" constant="17" id="FR8-gK-Yed"/>
+                            <constraint firstItem="iei-mL-1Jz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GQq-ps-RP6"/>
+                            <constraint firstItem="yAL-iD-XgQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLj-yw-Ihp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iei-mL-1Jz" secondAttribute="bottom" id="Mvd-cT-9CP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yAL-iD-XgQ" secondAttribute="trailing" constant="119" id="S0e-Ol-ImL"/>
+                            <constraint firstItem="yAL-iD-XgQ" firstAttribute="top" secondItem="Cgw-IN-COe" secondAttribute="bottom" constant="21" id="Sio-25-Y1s"/>
+                            <constraint firstItem="Cgw-IN-COe" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V6e-8C-6QS"/>
+                            <constraint firstItem="Lfw-xj-2zD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ePl-AL-JEa"/>
+                            <constraint firstItem="Lfw-xj-2zD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iwU-xQ-gjk"/>
+                            <constraint firstAttribute="trailing" secondItem="iei-mL-1Jz" secondAttribute="trailing" id="kQt-y2-J6b"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="iei-mL-1Jz" id="Z4K-U7-LlE"/>
+                        <outlet property="txtLat" destination="Lfw-xj-2zD" id="tur-Od-VZD"/>
+                        <outlet property="txtLon" destination="Cgw-IN-COe" id="aXR-sn-DOR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "90275BC41D8E458E00122A53"
-               BuildableName = "?&#xe1f;&#xe22;&#xe2b;.app"
-               BlueprintName = "?&#xe1f;&#xe22;&#xe2b;"
-               ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+               BuildableName = "Maps.app"
+               BlueprintName = "Maps"
+               ReferencedContainer = "container:Maps.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "90275BD81D8E458F00122A53"
-               BuildableName = "?&#xe1f;&#xe22;&#xe2b;Tests.xctest"
-               BlueprintName = "?&#xe1f;&#xe22;&#xe2b;Tests"
-               ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+               BuildableName = "MapsTests.xctest"
+               BlueprintName = "MapsTests"
+               ReferencedContainer = "container:Maps.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "90275BE31D8E458F00122A53"
-               BuildableName = "?&#xe1f;&#xe22;&#xe2b;UITests.xctest"
-               BlueprintName = "?&#xe1f;&#xe22;&#xe2b;UITests"
-               ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+               BuildableName = "MapsUITests.xctest"
+               BlueprintName = "MapsUITests"
+               ReferencedContainer = "container:Maps.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90275BC41D8E458E00122A53"
-            BuildableName = "?&#xe1f;&#xe22;&#xe2b;.app"
-            BlueprintName = "?&#xe1f;&#xe22;&#xe2b;"
-            ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+            BuildableName = "Maps.app"
+            BlueprintName = "Maps"
+            ReferencedContainer = "container:Maps.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90275BC41D8E458E00122A53"
-            BuildableName = "?&#xe1f;&#xe22;&#xe2b;.app"
-            BlueprintName = "?&#xe1f;&#xe22;&#xe2b;"
-            ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+            BuildableName = "Maps.app"
+            BlueprintName = "Maps"
+            ReferencedContainer = "container:Maps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "90275BC41D8E458E00122A53"
-            BuildableName = "?&#xe1f;&#xe22;&#xe2b;.app"
-            BlueprintName = "?&#xe1f;&#xe22;&#xe2b;"
-            ReferencedContainer = "container:?&#xe1f;&#xe22;&#xe2b;.xcodeproj">
+            BuildableName = "Maps.app"
+            BlueprintName = "Maps"
+            ReferencedContainer = "container:Maps.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
